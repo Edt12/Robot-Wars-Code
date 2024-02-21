@@ -1,2 +1,3 @@
 # Robot-Wars-Code
-Testing micropython robots
+Testing micropython raspberry pi pico
+
