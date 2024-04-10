@@ -82,10 +82,8 @@ def main():
     servoValTwo = 0
     sonar = GroveUltrasonicRanger(pinUDS)
 
-
+    print("before while")
     while True:
-        print('{} cm'.format(sonar.get_distance()))
-        print(str(distanceMeasure.value()) + "Distance Measure")
         if motionSensorOne.value() == 1:
                 drv.Forward()
         else:
@@ -98,11 +96,6 @@ def main():
         else:
             drv2.Brake()
 
-              
-
-
-
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
+    print("main")
     main()
